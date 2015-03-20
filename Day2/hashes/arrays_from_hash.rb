@@ -5,3 +5,5 @@ kamloops: 73472, chilliwack: 66382}
 arr = bc_cities_population.values.to_a
 
 puts arr
+
+puts bc_cities_population.map { |k,v| v/1000 }

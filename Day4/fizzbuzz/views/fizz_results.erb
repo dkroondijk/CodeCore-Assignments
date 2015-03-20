@@ -1,0 +1,17 @@
+
+<%# for num in 1..100 %>
+  <%# if num % @number_1.to_i ==0 && num % @number_2.to_i == 0 %>
+    <!-- FizzBuzz -->
+  <%# elsif num % @number_1.to_i ==0 %>
+    <!-- Fizz -->
+  <%# elsif num % @number_2.to_i ==0 %>
+    <!-- Buzz -->
+  <%# else %>
+    <%#= num %>
+  <%# end %>
+<%# end %>
+
+<% @results.each do |result| %>
+  <%= result %>
+  <br>
+<% end %>
