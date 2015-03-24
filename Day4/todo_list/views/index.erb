@@ -1,0 +1,40 @@
+<form action="/" method="post">
+  <label for="task">Task Name</label>
+  <input type="text" name="task" id="task">
+  <input type="submit" value="Create Task">
+</form>
+<hr>
+
+<br>
+
+<h2>Pending Tasks</h2>
+<hr>
+<table>
+  <% @pending_tasks.each do |item| %>
+  <tr><%= item.task %></tr>
+  <form action="/<%= item.id %>" method="post" class="button">
+    <input type="hidden" name="_method" value="patch">
+    <input type="submit" value="Mark Complete">
+  </form>
+  <hr>
+  <br>
+  <% end %>
+</table>
+
+<br>
+<br>
+
+<h2>Completed Tasks</h2>
+<hr>
+<table>
+  <% @completed_tasks.each do |item| %>
+  <tr><%= item.task %></tr>
+  <form action="/<%= item.id %>" method="post" class="button">
+    <input type="hidden" name="_method" value="patch">
+    <input type="submit" value="Mark Incomplete">
+  </form>
+  <hr>
+  <br>
+  <% end %>
+</table>
+

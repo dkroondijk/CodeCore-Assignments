@@ -1,0 +1,12 @@
+<% @snip_count.each do |x, count| %>
+<a href="/language/<%= x %>"><%= x.capitalize %> Snippets(<%= count %>)</a>
+<br>
+<br>
+<% end %>
+
+<br>
+<br>
+
+<div class="new_snippet_button">
+  <a href="/new_snippet">Create New Snippet</a>
+</div>

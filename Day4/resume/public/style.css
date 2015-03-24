@@ -1,0 +1,18 @@
+#logo {
+  height: 100px;
+}
+
+.profile_pic {
+  height: 150px;
+  display: inline-block;
+  float: left;
+}
+
+.contact_info {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+tr th {
+  text-align: left;
+}

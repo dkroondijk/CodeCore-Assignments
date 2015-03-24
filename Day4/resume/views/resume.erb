@@ -1,0 +1,15 @@
+
+<h2>Resumes</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% @resume.each do |resume| %>
+  <tr>
+    <td><%= resume.first_name %> <%= resume.last_name %></td>
+    <td><a href="/resume/<%= resume.first_name %>">View</a></td>
+  </tr>
+  <% end %>
+
+</table>

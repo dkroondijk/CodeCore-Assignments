@@ -1,0 +1,15 @@
+img {
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.new_snippet_button {
+  height: 50px;
+  width: 150px;
+  background: #ccc;
+  text-align: center;
+  padding-top: 20px;
+}

@@ -1,0 +1,17 @@
+<h2>My Snippets</h2>
+
+<table>
+  <tr>
+    <th>Language</th>
+    <th>Title</th>
+  </tr>
+  <% @snippets.each do |snippet| %>
+    <tr>
+      <td><%= snippet.language %></td>
+      <td><%= snippet.title %></td>
+      <td><a href="/snippet/<%= snippet.id %>">View</a></td>
+    </tr>
+  <% end %>
+
+
+</table>

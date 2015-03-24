@@ -1,0 +1,24 @@
+<h1>My Resume</h1>
+
+<% @my_resume.each do |resume| %>
+
+  <div class="profile_pic">
+    <img class ="profile_pic" src="<%= resume.image %>">
+  </div>
+
+  <div class="contact_info">
+    <h2><%= resume.first_name %> <%= resume.last_name %></h2>
+    <p><%= resume.address %></p>
+    <br>
+    <a href="<%= resume.linked_in %>">Check out my Linked In</a>
+  </div>
+  <br>
+  <br>
+  <div>
+    <h2>Education</h2>
+    <p><%= resume.education %></p>
+    <h2>Work Experience</h2>
+    <p><%= resume.work %></p>
+  </div>
+
+<% end %>

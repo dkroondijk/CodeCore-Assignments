@@ -1,0 +1,20 @@
+#logo {
+  height: 100px;
+}
+
+.header {
+  padding-left: 18px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+tr {
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  float: right;
+}
